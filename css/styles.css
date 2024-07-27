@@ -335,3 +335,53 @@ img {
     justify-content: center;
   }
 }
+
+/* Comisiones */
+@media screen and (min-width: 1700px) {
+  .comisiones__contenedor {
+    max-width: 220rem;
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+
+.comisiones__titulo {
+  text-align: center;
+}
+
+.comisiones__subtitulo {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+@media screen and (min-width:1280px) {
+  .comisiones__subtitulo {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .comisiones__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    align-items: center;
+  }
+}
+
+.card--2col {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card__porcentaje {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--primario);
+}
+
+.comisiones__imagen {
+  padding-top: 11rem;
+}
