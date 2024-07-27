@@ -198,7 +198,7 @@ img {
   }
 }
 
-/* What is */
+/* Nucleus */
 @media screen and (min-width: 1700px) {
   .nucleus__contenedor {
     max-width: 220rem;
@@ -255,12 +255,12 @@ img {
 }
 
 .card {
-  border: 1px solid #e1e1e1;
   margin: 3rem 0;
   padding: 2rem;
   box-shadow: 0px 0px 15px 3px rgba(0 0 0 / .15);
   transition-property: transform;
   transition-duration: .4s;
+  background-color: var(--blanco);
 }
 
 .card:hover {
@@ -270,4 +270,68 @@ img {
 .card__titulo {
   font-size: 3.2rem;
   color: var(--primario);
+}
+
+/* Seguridad */
+.seguridad {
+  background-color: var(--primario);
+  padding: 20rem 0;
+  position: relative;
+  margin: 10rem 0;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .seguridad {
+    margin: 15rem 0;
+  }
+}
+
+.seguridad::before,
+.seguridad::after {
+  background-color: var(--blanco);
+  content: '';
+  height: 20rem;
+  width: 120%;
+  position: absolute;
+}
+
+.seguridad::before {
+  top: -10rem;
+  left: 0;
+  transform: rotate(-3deg);
+}
+
+.seguridad::after {
+  transform: rotate(3deg);
+  bottom: -10rem;
+  left: 0;
+}
+
+@media screen and (min-width: 1700px) {
+  .seguridad__contenedor {
+    max-width: 220rem;
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+
+.seguridad__heading {
+  text-align: center;
+  color: var(--blanco);
+  margin-bottom: 5rem;
+}
+
+@media screen and (min-width:768px) {
+  .seguridad__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    align-items: center;
+  }
+
+  .seguridad__imagen {
+    display: flex;
+    justify-content: center;
+  }
 }
